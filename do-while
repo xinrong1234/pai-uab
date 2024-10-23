@@ -1,0 +1,69 @@
+//18.1.- Escriu, fent servir la instrucció do-while, un programa que escrigui a la consola 10 
+cops el text “Estem fent bucles”.  
+
+  let contador = 0;
+
+do {
+    console.log("Estem fent bucles");
+    contador++; // Incrementar el contador
+} while (contador < 10);
+  
+  
+  
+  
+  
+  
+  18.2.- Escriu, fent servir la instrucció for, un programa que escrigui a la consola tots els 
+nombres del 5 al 20. 
+for (let i = 5; i <= 20; i++) {
+    console.log(i);
+}
+
+
+    
+18.3.- Escriure un programa, fent servir la instrucció do-while, que, donat un número N, 
+escrigui a la consola tots els números de N a 1 (per tant, en ordre descendent). Observa el 
+que passa si N < 1. 
+let N = parseInt(prompt("Introdueix un número N:"));
+
+if (N < 1) {
+    console.log("Error: N ha de ser 1 o més gran.");
+} else {
+    let i = N;
+    do {
+        console.log(i);
+        i--; // Decrementar i
+    } while (i >= 1);
+}
+
+
+  
+18.4.- Escriu un programa que, donat un nombre N, ens digui si és primer. Un número és 
+primer si només és divisible per 1 i per ell mateix (això implica que caldrà comprovar si hi ha 
+algun número entre 1 i N que sigui divisor de N). 
+
+
+  
+18.5.- Escriu, fent servir la instrucció do-while, un programa que demani (fent servir la 
+instrucció prompt), 10 números, i ens digui quin és el més gran. 
+  let max = null; // Inicialitzem max a null
+let contador = 0;
+
+do {
+    let numero = parseFloat(prompt("Introdueix un número:")); // Demanar un número
+
+    // Comprovar si és el primer número introduït o si és més gran que el màxim actual
+    if (max === null || numero > max) {
+        max = numero; // Actualitzar el màxim
+    }
+    
+    contador++; // Incrementar el contador
+} while (contador < 10); // Continuar fins a 10 números
+
+console.log("El número més gran és: " + max);
+
+
+
+
+
+  
